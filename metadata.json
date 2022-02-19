@@ -1,0 +1,38 @@
+{
+    "title": "boosting_ai_model",
+    "summary": "This is the project which does the Decision Tree boosting",
+    "description": [
+		"This is boosting_ai_model application using DEEPaaS API",
+           "",
+           "**References**\n",
+           ""
+	],
+    "keywords": [
+        "docker",
+        "api-v2"
+    ],
+    "license": "No license file",
+    "date_creation": "2022-02-19",
+    "sources": {
+		"dockerfile_repo": "https://github.com/shramanpadhalni-web/DEEP-OC-boosting_ai_model",
+		"docker_registry_repo": "shramanpadhalni-web/deep-oc-boosting_ai_model",
+		"code": "https://github.com/shramanpadhalni-web/boosting_ai_model"
+	},
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-boosting_ai_model/master",
+        "build_status_url": "https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-boosting_ai_model/job/master"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-marathon-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
